@@ -18,15 +18,15 @@
     </header>
     <main>
       <div class="leftside">
-        <form>
-          <input id="awnser-input" type="text" />
+        <form id="answer-form">
+          <input id="awnser-input" type="number" max="20" min="1" />
+          <button class="btn" id="btn-check">Check!</button>
         </form>
-        <button class="btn" id="btn-check">Check!</button>
       </div>
       <div class="rightside">
         <p id="message" class="first-p">Start guessing...</p>
         <p class="other-p">💯 Score: <span id="score">20</span></p>
-        <p class="other-p">🥇 Highscore: 0</p>
+        <p class="other-p">🥇 Highscore: <span id="highscore">0</span></p>
       </div>
     </main>
     <script src="js/script.js"></script>
